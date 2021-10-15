@@ -1,0 +1,174 @@
+.header {
+  padding: 80px; /* some padding */
+  text-align: center; /* center the text */
+  background: #3772FF; /* green background */
+  color: white; /* white text color */
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #484349; /* Dark background color */
+}
+
+@page {
+  height: 200%;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #E6E8E6; /* Grey background color */
+  color: black; /* Black text color */
+}
+
+/* Style the search box inside the navigation bar */
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.navbar a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+h1 {
+  font-weight: bold;
+  padding-left: 10%;
+  font-size: 400%;
+  text-decoration: none;
+}
+
+h1.spacing {
+  word-spacing: 10px;
+}
+
+.eyedropstext {
+  padding-left: 2px;
+}
+
+h2 {
+  color: #C44536;
+  padding-left: 40px;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+p {
+  line-height: 1.5;
+  white-space: normal;
+}
+
+background {
+  color: green;
+}
+
+.eyedropstext, .murdertext, .murderForm {
+  padding: 7%;
+  text-align: inherit;
+}
+
+.img-wrapper {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  padding: 5%;
+}
+
+.inner-img {
+  transition: 0.3s;
+}
+
+.inner-img:hover {
+  transform: scale(1.1);
+}
+
+
+.footer {
+  padding: 5%; /* Some padding */
+  text-align: center; /* Center text*/
+}
+
+/* MURDER FORM*/
+
+.murderForm {
+
+}
+
+.murderForm input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+}
